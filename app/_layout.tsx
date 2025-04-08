@@ -7,7 +7,7 @@ import { Platform } from "react-native";
 import { ErrorBoundary } from "./error-boundary";
 import { useAuthStore } from "@/store/auth-store";
 
-export const unstable_settings = {
+const unstable_settings = {
   initialRouteName: "index",
 };
 

@@ -75,24 +75,7 @@ export default function JournalEntryScreen() {
   };
   
   return (
-    <SafeAreaView style={styles.container} edges={['bottom']}>
-      <Stack.Screen
-        options={{
-          title: 'Journal Entry',
-          headerRight: () => (
-            <Button
-              title=""
-              onPress={handleDelete}
-              style={styles.deleteButton}
-              textStyle={styles.deleteButtonText}
-              variant="outline"
-            >
-              <Trash2 size={20} color={colors.error} />
-            </Button>
-          ),
-        }}
-      />
-      
+    <SafeAreaView style={styles.container} edges={['bottom']}>    
       <ScrollView style={styles.scrollView}>
         <View style={styles.header}>
           <Text style={styles.date}>{formattedDate}</Text>
